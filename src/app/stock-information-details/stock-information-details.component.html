@@ -1,0 +1,38 @@
+<div class="cards">
+<ng-container class="title-card">
+  <mat-card class="example-card">
+    <mat-card-title>Date 1</mat-card-title>
+    <mat-card-subtitle>Date: {{date1?.data[0]?.date}}</mat-card-subtitle>
+    <mat-card-subtitle>Open: {{date1?.data[0]?.open}}</mat-card-subtitle>
+    <mat-card-subtitle>High: {{date1?.data[0]?.high}}</mat-card-subtitle>
+    <mat-card-subtitle>Low: {{date1?.data[0]?.low}}</mat-card-subtitle>
+    <mat-card-subtitle>Close: {{date1?.data[0]?.close}}</mat-card-subtitle>
+  </mat-card>
+</ng-container>
+<ng-container class="title-card">
+  <mat-card class="example-card">
+    <mat-card-title>Date 2</mat-card-title>
+    <mat-card-subtitle>Date: {{date2?.data[0]?.date}}</mat-card-subtitle>
+    <mat-card-subtitle>Open: {{date2?.data[0]?.open}}</mat-card-subtitle>
+    <mat-card-subtitle>High: {{date2?.data[0]?.high}}</mat-card-subtitle>
+    <mat-card-subtitle>Low: {{date2?.data[0]?.low}}</mat-card-subtitle>
+    <mat-card-subtitle>Close: {{date2?.data[0]?.close}}</mat-card-subtitle>
+  </mat-card>
+</ng-container>
+</div>
+
+<p *ngIf="this.date1?.data[0]?.open > this.date2?.data[0]?.open">{{openGreater}}</p>
+<p *ngIf="this.date1?.data[0]?.open < this.date2?.data[0]?.open">{{openLesser}}</p>
+<p *ngIf="this.date1?.data[0]?.open == this.date2?.data[0]?.open">{{openEqual}}</p>
+
+<p *ngIf="this.date1?.data[0]?.close > this.date2?.data[0]?.close">{{closeGreater}}</p>
+<p *ngIf="this.date1?.data[0]?.close < this.date2?.data[0]?.close">{{closeLesser}}</p>
+<p *ngIf="this.date1?.data[0]?.close == this.date2?.data[0]?.close">{{closeEqual}}</p>
+
+<p *ngIf="this.date1?.data[0]?.high > this.date2?.data[0]?.high">{{highGreater}}</p>
+<p *ngIf="this.date1?.data[0]?.high < this.date2?.data[0]?.high">{{highLesser}}</p>
+<p *ngIf="this.date1?.data[0]?.high == this.date2?.data[0]?.high">{{highEqual}}</p>
+
+<p *ngIf="this.date1?.data[0]?.low > this.date2?.data[0]?.low">{{lowGreater}}</p>
+<p *ngIf="this.date1?.data[0]?.low < this.date2?.data[0]?.low">{{lowLesser}}</p>
+<p *ngIf="this.date1?.data[0]?.low == this.date2?.data[0]?.low">{{lowEqual}}</p>

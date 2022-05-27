@@ -1,0 +1,21 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <mat-form-field class="background" appearance="outline">
+    <mat-label>Choose a date 1</mat-label>
+    <input formControlName="date1" matInput [matDatepicker]="picker">
+    <mat-hint>DD/MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class="background" appearance="outline">
+    <mat-label>Choose a date 2</mat-label>
+    <input formControlName="date2" matInput [matDatepicker]="picker1">
+    <mat-hint>DD/MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
+  </mat-form-field>
+  <section>
+    <div class="example-button-row">
+      <button type="submit" [disabled]="!form.value.date1 || !form.value.date2" mat-raised-button color="primary">SUBMIT</button>
+    </div>
+  </section>
+</form>

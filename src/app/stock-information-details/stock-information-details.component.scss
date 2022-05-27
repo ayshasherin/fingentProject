@@ -1,0 +1,25 @@
+// .cards {
+//   display: flex;
+//   justify-content: space-around;
+//   width: 100%;
+
+//   .title-card {
+//     flex-direction: column;
+//     width: 100vw;
+//     height: 100vh;
+//   }
+// }
+.example-card {
+  max-width: 400px;
+  margin-left: 35%;
+  margin-top: 3%;
+}
+p{
+  margin-left: 41%;
+  margin-top: 2%;
+  font-size: 17px;
+}
+::ng-deep .mat-card {
+  background: #5c5c5c;
+  color: rgba(0,0,0,.87);
+}

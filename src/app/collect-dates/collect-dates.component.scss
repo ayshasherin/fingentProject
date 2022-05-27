@@ -1,0 +1,26 @@
+.background {
+  background-color: rgb(92, 92, 92) ;
+  margin-left: 15%;
+  margin-top: 20%;
+}
+
+.h1 {
+  margin-left: -20%;
+}
+
+section {
+  margin-top: -4%;
+  margin-left: 75%;
+}
+
+.main{
+  background-color: #e3e2e1;
+}
+
+::ng-deep .mat-calendar {
+  background: linear-gradient(45deg, rgb(101, 9, 9), transparent);
+}
+
+::ng-deep .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background-color:  rgb(147, 8, 8);
+}
