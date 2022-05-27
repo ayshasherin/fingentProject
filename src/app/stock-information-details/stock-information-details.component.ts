@@ -41,18 +41,6 @@ export class StockInformationDetailsComponent implements OnInit {
 
     }
 
-    // if(this.date1?.data[0]?.open > this.date2?.data[0]?.open){
-    //   return this.openGreater;
-    // }
-    // if(this.date1?.data[0]?.open < this.date2?.data[0]?.open){
-    //   return this.openLesser;
-    // }
-    // if(this.date1?.data[0]?.open == this.date2?.data[0]?.open){
-    //   return this.openEqual;
-    // }
-
-
-
 
   }
 
